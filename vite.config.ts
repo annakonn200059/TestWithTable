@@ -4,6 +4,7 @@ import path from 'path';
 import svgr from '@svgr/rollup';
 
 export default defineConfig({
+  base: '/TestWithTable/',
   plugins: [react(), svgr()],
   resolve: {
     alias: {
