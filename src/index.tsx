@@ -8,7 +8,7 @@ import Header from './view/components/Header/index.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/TestWithTable">
       <Header />
       <Suspense fallback={<div>Loading...</div>}>
         <AppRouter />
