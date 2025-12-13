@@ -1,0 +1,43 @@
+@use '../../../styles/media/media-variables';
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 379px;
+  gap: 34px;
+  grid-template-rows: 620px;
+
+  @media (max-width: 1420px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--system-white);
+  border-radius: var(--radius-30);
+  min-width: 800px;
+  overflow: hidden; 
+  position: relative;
+
+  @media #{media-variables.$dc-mq-tablet-landscape-and-less} {
+    min-width: auto;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--len-32);
+  }
+
+  &__title {
+    white-space: nowrap;
+
+    @media #{media-variables.$dc-mq-mobile-and-less} {
+      white-space: pre-wrap;
+      font-size: var(--font-size-h3);
+    }
+  }
+}

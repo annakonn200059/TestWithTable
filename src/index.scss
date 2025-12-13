@@ -1,0 +1,61 @@
+@use "./styles/main.scss";
+@import './assets/fonts/fonts.css';
+
+:global(#app) {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, li {
+    padding: 0;
+    margin: 0;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div {
+    width: 100%;
+}

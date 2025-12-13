@@ -1,0 +1,14 @@
+@use '../../../styles/media/media-variables';
+
+.page_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: var(--len-36) var(--len-120) var(--len-72);
+    gap: 32px;
+    width: 100%;
+
+    @media #{media-variables.$dc-mq-mobile-and-less} {
+        padding: var(--len-22) var(--len-10);
+    }
+}
